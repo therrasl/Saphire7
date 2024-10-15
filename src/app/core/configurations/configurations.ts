@@ -36,6 +36,7 @@ import { PolymorpheusContent } from '@taiga-ui/polymorpheus';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ConfigurationsComponent {
+  
   hoursValue = new FormControl<number>(0);
   testValue = new FormControl<string | null>(null);
 
@@ -47,7 +48,7 @@ export class ConfigurationsComponent {
 
   public value: TuiDay | null = null;
 
-  protected onDayClick(day: TuiDay): void {
+  public onDayClick(day: TuiDay): void {
     this.value = day;
   }
 

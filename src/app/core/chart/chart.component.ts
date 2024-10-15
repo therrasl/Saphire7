@@ -23,17 +23,7 @@ Chart.register(...registerables);
 export class ChartComponent implements OnInit {
   private zone = inject(NgZone);
 
-  getcolor(value: number) {
-    if (value <= 2) {
-      return '#FF6666';
-    } else if (value > 2 && value <= 4) {
-      return '#e6d800';
-    } else {
-      return '#50e991';
-    }
-  }
-
-  public  data = [2, 4, 5];
+  private readonly data = [2, 4, 5 , 1 , 9];
 
 
   ngOnInit(): void {

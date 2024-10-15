@@ -1,6 +1,7 @@
-*{
+* {
   color: white !important;
 }
+
 header {
   display: flex;
   justify-content: space-around;
@@ -9,7 +10,11 @@ header {
   border-color: transparent;
   border-radius: 15px;
   width: 1280px;
-  background-color:rgba(55, 67, 117);
+  background-color: rgba(55, 67, 117);
+}
+
+.logo {
+  width: 70px;
 }
 
 .logo-text {
@@ -18,8 +23,13 @@ header {
   font-style: normal;
   font-size: 20px;
   padding: 0;
+  margin: 0;
 }
 
 .saint {
   font-size: 12px;
+}
+
+.logo-list {
+  display: flex;
 }

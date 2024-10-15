@@ -1,0 +1,35 @@
+.form {
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  border: 2px solid rgba(55, 67, 117);
+  color: black ;
+  background-color:white;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+}
+.select {
+  width: 300px;
+  border: 2px solid rgba(55, 67, 117);
+  color: black !important;
+  margin-left: 20px;
+  margin : 10px ,;
+}
+.form-button{
+  width:200px;
+  height: 40px;
+  background-color:rgba(55, 67, 117);
+  border:none;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+}
+.calendar{
+  width:300px;
+  height:400px;
+  margin: 0 auto;
+
+
+}
+

@@ -38,7 +38,7 @@ export class ChartComponent implements OnInit {
 
   ngOnInit(): void {
     this.zone.runOutsideAngular(() => {
-      new Chart('myChart', {
+      new Chart('WeekStatistics', {
         type: 'bar',
         data: {
           labels: [
@@ -53,10 +53,11 @@ export class ChartComponent implements OnInit {
           datasets: [
             {
               label:
-                'График где указано кол-во времени которое вы уделили учебе',
+                'Часы уделенные учебе',
               data: this.data,
-              borderWidth: 1,
-              backgroundColor: this.data.map(this.getcolor),
+              borderWidth: 2,
+              backgroundColor: '#8fbfda',
+              borderColor :'#2c6485' ,
             },
           ],
         },

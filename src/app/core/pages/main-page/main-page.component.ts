@@ -1,14 +1,15 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { ChartComponent } from '../../../user/chart/chart.component';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/core';
+import { ChartComponent } from '../../chart/chart.component';
+import { ConfigurationsComponent } from '../../configurations/configurations';
 
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [ ChartComponent],
+  imports: [ ChartComponent ,ConfigurationsComponent ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss' ,
-  changeDetection : ChangeDetectionStrategy.OnPush
+  changeDetection : ChangeDetectionStrategy.OnPush , 
 })
 export class MainPageComponent {
 

@@ -1,0 +1,35 @@
+<div class="form">
+  <form>
+    <button
+      size="m"
+      tuiButton
+      type="button"
+      (click)="showDialog(template)"
+      class="form-button"
+    >
+      Choose date
+    </button>
+    <tui-select tuiTextfieldSize="s" [formControl]="hoursValue" class="select">
+      Set Hours
+      <input placeholder="Hours" tuiTextfieldLegacy />
+      <tui-data-list-wrapper *tuiDataList [items]="hours" />
+    </tui-select>
+
+    <tui-select tuiTextfieldSize="s" [formControl]="testValue" class="select">
+      Choose your language
+      <input placeholder="Program language" tuiTextfieldLegacy />
+      <tui-data-list-wrapper *tuiDataList [items]="items" />
+    </tui-select>
+    <button class="form-button" tuiButton>Time</button>
+  </form>
+</div>
+<ng-template #template let-observer class="template">
+  <div class="calendar">
+    <tui-calendar [value]="value" (dayClick)="onDayClick($event)" />
+
+    <div>
+      <div *ngIf="value" class="value">Chosen date: {{ value }}</div>
+      <button tuiButton class="form-button">Choose</button>
+    </div>
+  </div>
+</ng-template>

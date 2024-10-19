@@ -16,9 +16,5 @@ const options = {
 };
 
 export const HighChart = () => {
-  return (
-    <>
-      <HighchartsReact highcharts={Highchart} options={options} />
-    </>
-  );
+  return <HighchartsReact highcharts={Highchart} options={options} />;
 };

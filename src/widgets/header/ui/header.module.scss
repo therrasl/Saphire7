@@ -1,0 +1,33 @@
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-color: transparent;
+    border-radius: 15px;
+    width: 1280px;
+    background-color: rgba(55, 67, 117);
+    color:white;
+  }
+  
+  .logo {
+    width: 70px;
+  }
+  
+  .logo-text {
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .saint {
+    font-size: 12px;
+  }
+  
+  .logo-list {
+    display: flex;
+  }

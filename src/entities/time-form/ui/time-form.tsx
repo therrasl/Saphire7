@@ -61,7 +61,7 @@ export const TimeForm = () => {
           showTime={{ format: "HH" }}
           format="YYYY-MM-DD"
         />
-        <Button type="primary" color="primary" className={s.formButton}>
+        <Button type="primary" color="primary" className={s.formBtn}>
           Sumbit
         </Button>
       </Form>

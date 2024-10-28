@@ -3,15 +3,23 @@ import { TimeForm } from "@/entities/time-form";
 
 export const HomePage = () => {
   return (
-    <div
+    <section
       style={{
         display: "flex",
-        justifyContent: "space-between",
         marginTop: "20px",
+        border: "2px solid rgba(55, 67, 117)",
+        borderRadius: "4px",
+       backgroundColor:'white',
+       alignItems:'center',
+       maxWidth:"1200px"
       }}
     >
-      <TimeForm></TimeForm>
-      <HighChart></HighChart>
-    </div>
+      <div style={{ marginRight: "40px" }}>
+        <TimeForm />
+      </div>
+      <div style={{ marginLeft: "10px" }}>
+        <HighChart />
+      </div>
+    </section>
   );
 };
